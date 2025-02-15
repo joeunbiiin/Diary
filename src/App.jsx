@@ -23,8 +23,6 @@ const mockData = [
 ];
 
 function App() {
-  const [data, dispatch] = useReducer(reducer, mockdata);
-  const idRef = useRef(3);
   return (
     <>
       <button>일기 추가</button>
