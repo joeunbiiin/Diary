@@ -6,6 +6,8 @@ import Diary from "./pages/Diary";
 import New from "./pages/New";
 import Edit from "./pages/Edit";
 import Notfound from "./pages/Notfound";
+import Header from "./pages/Header";
+import Button from "./pages/Button";
 
 const mockData = [
   {
@@ -25,9 +27,28 @@ const mockData = [
 function App() {
   return (
     <>
-      <button>일기 추가</button>
-      <button>일기 수정</button>
-      <button>일기 삭제</button>
+      <Header />
+      <Button
+        text={"text"}
+        type={"DEFAULT"}
+        onClick={() => {
+          console.log("기본 클릭");
+        }}
+      />
+      <Button
+        text={"text"}
+        type={"POSITIVE"}
+        onClick={() => {
+          console.log("기본 클릭");
+        }}
+      />
+      <Button
+        text={"text"}
+        type={"NEGATIVE"}
+        onClick={() => {
+          console.log("기본 클릭");
+        }}
+      />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/new" element={<New />}></Route>
