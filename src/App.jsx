@@ -6,8 +6,8 @@ import Diary from "./pages/Diary";
 import New from "./pages/New";
 import Edit from "./pages/Edit";
 import Notfound from "./pages/Notfound";
-import Header from "./pages/Header";
-import Button from "./pages/Button";
+import Header from "./components/Header";
+import Button from "./components/Button";
 
 const mockData = [
   {
